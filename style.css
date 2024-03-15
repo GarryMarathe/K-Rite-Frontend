@@ -289,14 +289,8 @@ i {
   font-size: 10px;
 }
 
-.sidebar ul li a:hover {
-  color: var(--secondery);
-}
-.addBilling a:hover {
-  color: #7198a6;
-}
 .billing button:hover {
-  background-color: #719480;
+  background-color: #1aa858;
   color: #7198a6;
 }
 
