@@ -83,7 +83,7 @@ i {
   display: flex;
 }
 
-.sidebar {
+.sidepanel {
   width: 20%;
   padding-left: 0px;
   margin: 8px;
@@ -91,7 +91,7 @@ i {
   border-radius: 12px;
 }
 
-#Profile {
+#userprofile {
   display: flex;
   /* background-color: #555; */
   width: 100%;
@@ -115,34 +115,34 @@ i {
   /* margin-top: 7px; */
 }
 
-#profile p {
+#userprofile p {
   margin-left: 50px;
 }
 
-.sideHad {
+.sidehead {
   padding: 0px;
   margin-bottom: 0px;
   font-size: 12px;
 }
 
-.sideSubHad {
+.sidesubhead {
   padding: 0px;
   margin-top: 0px;
   font-weight: bold;
   font-size: 14px;
 }
 
-.side-content {
+.sidesection {
   /* height: 100%; */
   padding: 4px 10px 0 13px;
   font-size: 15px;
   float: left;
 }
 
-.side-content i{
+.sidesection i{
   padding-right: 9px;
 }
-.side-content button {
+.sidesection button {
   background: none;
   border-radius: 6px;
   margin: 1px 0;
@@ -156,14 +156,14 @@ i {
   cursor: pointer;
 }
 
-.side-content .folderTxt{
+.sidesection .folderSection{
   font-size: 15px;
   padding-left: 10px;
   padding-top: 10px;
   font-weight: 800;
 }
 
-.side-content .Team li a span {
+.sidesection .teams li a span {
   float: right; /* Align to the right */
   margin-right: 10px; /* Adjust as needed */
    border-radius: 3px; 
@@ -171,19 +171,19 @@ i {
   background-color:#efefef ;
 }
 
-.side-content .Team:hover li a span {
+.sidesection .teams:hover li a span {
   background-color: rgb(255, 255, 255);
 }
-.side-content button:hover {
+.sidesection button:hover {
   background-color: #f1f3f8;
 
 }
 
-.side-content li{
+.sidesection li{
   padding: 5px 0px;
 }
 
-.side-content .creatTask {
+.sidesection .createTask {
   /* background-color: #ffffff; */
   border: #f1f3f8 solid 2px;
   border-radius: 4px;
@@ -194,32 +194,32 @@ i {
   height: 37px;
 }
 
-.side-content .creatTask p {
+.sidesection .createTask p {
   display: inline;
   cursor: pointer;
   text-decoration: none;
   color: var(--secondery);
 }
 
-.side-content .creatTask:hover {
+.sidesection .createTask:hover {
   background-color: var(--secondery);
 }
 
-.side-content .creatTask:hover p {
+.sidesection .createTask:hover p {
   color: var(--primerly);
 }
 
 
-.side-content .creatTask:hover i{
+.sidesection .createTask:hover i{
   color: var(--primerly);
 }
 
-.Team {
+.teams {
   margin-top: 10px;
   padding: 10px;
 }
 
-.folderTxt {
+.folderSection {
   font-size: 12px;
   color: var(--secondery);
   font-weight: 600;
@@ -250,39 +250,39 @@ i {
   float: right;
 }
 
-.folder .creatTask {
+.folder .createTask {
   border: none;
   margin-top: 2px;
   margin-left: 8px;
 }
-.sidebar ul {
+.sidepanel ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar .folder ul li {
+.sidepanel .folder ul li {
   margin-left: 15px;
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
-.sidebar ul li a {
+.sidepanel ul li a {
   text-decoration: none;
   color: var(--secondery);
 }
 
-.status-parent {
+.otherTeams {
   margin-top: 30px;
 
 }
 
-.status-parent .notice button {
+.otherTeams .extraTasks button {
   display: flex;
   align-items: center;
 }
 
-.billing {
+.trial {
   background: var(--primerly);
   border-radius: 6px;
   height: 25px;
@@ -291,41 +291,41 @@ i {
   align-items: center;
   justify-content: space-between;
 }
-.billing p {
+.trial p {
   display: inline;
 }
 
-.billing button {
+.trial button {
   background: var(--secondery);
   width: 100%;
   padding: 9px;
   margin: 0;
 }
 
-.billing .addBilling {
+.trial .trialBill {
   float: right;
 
 }
 
-.billing .addBilling a {
+.trial .trialBill a {
   color: #f1f3f8;
   font-size: 14px;
   font-family: "Inter";
 }
 
-.billing button:hover {
+.trial button:hover {
   background-color: #1aa858;
   color: #7198a6;
 }
 
 /* Main content */
 
-.main-content {
+.maincontent {
   flex: 1;
   padding: 20px;
 }
 
-.hedder {
+.title {
   display: flex;
   justify-content: space-between;
 }
@@ -334,9 +334,11 @@ i {
   border: none;
 }
 
-.Search-box {
-  margin-top: 18px;
+.searchBox {
+  /* margin-top: 18px; */
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fa-search {
   color: var(--secondery);
@@ -367,7 +369,7 @@ i {
   padding-right: 4px; */
 }
 
-.Search-tab {
+.searchTab {
   padding: 5px;
   border: 2px solid var(--primerly);
   border-radius: 4px;
@@ -573,18 +575,18 @@ th {
   margin: 0 5px;
 }
 
-/* Sidebar Responsive */
+/* sidepanel Responsive */
 
 @media screen and (max-width: 768px) {
-  .sidebar {
+  .sidepanel {
     width: 10px;
     border: none;
   }
   .logo,
-  .sideHad,
-  .sideSubHad,
+  .sidehead,
+  .sidesubhead,
   .folder,
-  .side-content,
+  .sidesection,
   .tag,
   .Member,
   #tag-head,
@@ -607,7 +609,7 @@ th {
 }
  /* Media queries */
   @media screen and (max-width: 768px) {
-    .sidebar {
+    .sidepanel {
       width: 10px;
       border: none;
     }
