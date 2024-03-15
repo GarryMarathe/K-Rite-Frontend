@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="path/to/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>K-RITE Frontend Devloper Assimnent</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- sidebar -->
+    <div class="sidebar">
+
+      <div id="Profile">
+        <div><img src="images/logo.webp" alt="logo" class="logo">
+          <p class="sideHad">INC</p>
+          <p class="sideSubHad">InovationHub</p>
+        </div>
+
+        <span><img src="images/profile.webp" alt="user-logo" class="user-logo"></span>
+      </div>
+
+      <div class="side-content">
+        <ul class="Team">
+          <button>
+            <li><a href="#"><i class="fa-brands fa-digital-ocean"></i> Digitel Team</a></li>
+          </button>
+          <button>
+            <li><a href="#"><i class="fa-solid fa-bullhorn"></i> Markating Team</a></li>
+          </button>
+          <button>
+            <li><a href="#"><i class="fa-solid fa-code"></i> Devlopment Team</a></li>
+          </button>
+        </ul>
+        <button class="creatTask">
+          <p href="#"><i class="fa-regular fa-square-plus"></i> Crate a folder</p>
+        </button>
+
+        <p class="folderTxt"><span>FOLDER</span><Span><i class="fa-solid fa-plus"></i></Span></p>
+
+        <div class="folder">
+
+          <!-- dropDown -->
+
+          <button id="headBtn"><i class="fas fa-folder" style="padding-right: 5px;"></i> Products <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement" style="display: block;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="creatTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- 1 dropDown -->
+
+          <button id="headBtn1"><i class="fas fa-folder" style="padding-right: 5px;"></i>Sales <i class="fas fa-caret-down"></i></button>
+
+          <ul id="btnElement1" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="creatTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+
+          <!-- 2 dropDown -->
+
+          <button id="headBtn2"><i class="fas fa-folder" style="padding-right: 5px;"></i>Design <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement2" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="creatTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- 3 dropDown -->
+
+          <button id="headBtn3"><i class="fas fa-folder" style="padding-right: 5px;"></i>Office <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement3" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="creatTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- 4 dropDown -->
+
+          <button id="headBtn4"><i class="fas fa-folder" style="padding-right: 5px;"></i>Legal <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement4" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="creatTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- Footor -->
+        </div>
+
+        <div class="status-parent">
+
+          <ul class="notice status-child">
+            <button id="inviteTeam">
+              <li><a href="#"><i class="fa-solid fa-user-plus"></i> Invite Teammates</a></li>
+            </button>
+            <button id="help">
+              <li><a href="#"><i class="fa-regular fa-circle-question"></i> Help and First Staps</a></li>
+            </button>
+            <li>
+              <div class="billing">
+
+                <p><i class="fa-solid fa-triangle-exclamation"></i>  days left on trial</p>
+
+                <span class="addBilling">
+                  <button><a href="#">Add billing</a></button>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
