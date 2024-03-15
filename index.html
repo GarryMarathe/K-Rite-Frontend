@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
   <title>K-RITE Frontend Devloper Assimnent</title>
@@ -33,17 +33,17 @@
       <div class="side-content">
         <ul class="Team">
           <button>
-            <li><a href="#"><i class="fa-brands fa-digital-ocean"></i> Digitel Team</a></li>
+            <li><a href="#"><i class="fas fa-pen-nib"></i> Digitel Team <span>X + 1</span></a> </li>
           </button>
           <button>
-            <li><a href="#"><i class="fa-solid fa-bullhorn"></i> Markating Team</a></li>
+            <li><a href="#"><i class="fa-solid fa-bullhorn"></i> Markating Team <span>X + 2</span></a></li>
           </button>
           <button>
-            <li><a href="#"><i class="fa-solid fa-code"></i> Devlopment Team</a></li>
+            <li><a href="#"><i class="fa-solid fa-code"></i> Devlopment Team <span>X + 3</span></a></li>
           </button>
         </ul>
         <button class="creatTask">
-          <p href="#"><i class="fa-regular fa-square-plus"></i> Crate a folder</p>
+          <p href="#"><i class="fa-regular fa-square-plus"></i> Create a folder</p>
         </button>
 
         <p class="folderTxt"><span>FOLDER</span><Span><i class="fa-solid fa-plus"></i></Span></p>
@@ -52,7 +52,7 @@
 
           <!-- dropDown -->
 
-          <button id="headBtn"><i class="fas fa-folder" style="padding-right: 5px;"></i> Products <i class="fa fa-caret-down"></i></button>
+          <button id="headBtn"><i class="fas fa-folder" ></i> Products <i class="fa fa-caret-down"></i></button>
 
           <ul id="btnElement" style="display: block;">
             <li><a href="#">Roadmap</a></li>
@@ -68,7 +68,7 @@
 
           <!-- 1 dropDown -->
 
-          <button id="headBtn1"><i class="fas fa-folder" style="padding-right: 5px;"></i>Sales <i class="fas fa-caret-down"></i></button>
+          <button id="headBtn1"><i class="fas fa-folder" ></i>Sales <i class="fas fa-caret-down"></i></button>
 
           <ul id="btnElement1" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -85,7 +85,7 @@
 
           <!-- 2 dropDown -->
 
-          <button id="headBtn2"><i class="fas fa-folder" style="padding-right: 5px;"></i>Design <i class="fa fa-caret-down"></i></button>
+          <button id="headBtn2"><i class="fas fa-folder" ></i>Design <i class="fa fa-caret-down"></i></button>
 
           <ul id="btnElement2" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -101,7 +101,7 @@
 
           <!-- 3 dropDown -->
 
-          <button id="headBtn3"><i class="fas fa-folder" style="padding-right: 5px;"></i>Office <i class="fa fa-caret-down"></i></button>
+          <button id="headBtn3"><i class="fas fa-folder" ></i>Office <i class="fa fa-caret-down"></i></button>
 
           <ul id="btnElement3" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -117,7 +117,7 @@
 
           <!-- 4 dropDown -->
 
-          <button id="headBtn4"><i class="fas fa-folder" style="padding-right: 5px;"></i>Legal <i class="fa fa-caret-down"></i></button>
+          <button id="headBtn4"><i class="fas fa-folder" ></i>Legal <i class="fa fa-caret-down"></i></button>
 
           <ul id="btnElement4" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -157,6 +157,22 @@
         </div>
       </div>
     </div>
+
+    <div class="main-content">
+        <header>
+          <div class="hedder">
+            <h3>Products</h3>
+            <div class="Search-box">
+              <form id="searchForm" class="Search-tab">
+                <i class="fa fa-search"></i>
+                <input type="search" id="searchInput" required class="search" placeholder="Search for...">
+              </form>
+              <div class="sideIcon">
+                <i class="fa-regular fa-comments chat"></i>
+                <i class="fa-solid fa-gear setting"></i>
+              </div>
+            </div>
+        </header> 
 
     <script src="./scripts.js"></script>
 </body>
