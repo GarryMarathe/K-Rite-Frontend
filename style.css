@@ -469,10 +469,18 @@ th {
   margin-left: 5%;
 }
 
+th i {
+  float: right;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
 .brandCheckbox::before {
   font-size: 20px;
     /* font-family: "Font Awesome 5 Free"; */
   color: #777;
+  
 }
 .brandCheckbox {
   width: 25px; /* Adjust width */
@@ -490,7 +498,7 @@ th {
 .brand-logo {
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin-left: 15px;
   
 }
 
@@ -499,8 +507,16 @@ th {
   font-family: "Inter";
 }
 
+.disc-head,.Member,.category,.Head-tag,.meeting{
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+
+
 .table-Desc {
   width: 22%;
+  font-size: 14px;
 }
 
 .user-Img-Container {
@@ -566,7 +582,7 @@ th {
 .brand-Name {
   width: 100%;
   height: 100%;
-  margin-top: 20px;
+  /* margin-top: 100px; */
   margin-bottom: 15px;
 }
 
@@ -580,25 +596,25 @@ th {
 }
 
 .table-Desc {
+  font-size: 14px;
   font-weight: 500;
 }
 .table-category {
   display: flex;
   background-color: #f1ebf4;
-  padding: 5px 10px 5px 10px;
   border-radius: 4px;
   width: fit-content;
   color: #9280b3;
+  font-size: 14px;
 }
 
 .tag {
   display: inline-flex;
   background-color: #f0f0f0;
-  padding: 5px 10px 5px 10px;
   border-radius: 4px;
-  width: fit-content;
-  margin-bottom: 2px;
-  margin-top: 1px;
+
+  margin: 0px 2px;
+  font-size: 14px;
 }
 
 #tag-head {
@@ -609,27 +625,40 @@ th {
   display: inline-flex;
 }
 
+.lastbrand,.lastdesc,.lastcate,.lastmem,.lastTag{
+  font-size: 14px;
+}
+
 .time {
   background-color: #dff8ec;
   padding: 5px 10px 5px 10px;
   border-radius: 4px;
   width: fit-content;
   color: green;
+  font-size: 14px;
 }
 
 .botoom-btn {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  border: 2px solid var(--primerly);
+  width: fit-content;
+  margin-left: 30%;
 }
 
 .botoom-btn button {
   border: 2px solid var(--primerly);
   background: none;
-  padding: 6px 10px 6px 10px;
-  border-radius: 6px;
   cursor: pointer;
-  margin: 0 5px;
+  
+  
+}
+
+.fa-window-close {
+  font-size: 20px; /* Adjust the size as needed */
+  padding: 2px 5px;
+  
 }
 
 /* sidepanel Responsive */

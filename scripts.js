@@ -97,3 +97,17 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
   });
   
 
+// Function to update the count of selected brands
+function updateSelectedCount() {
+  var selectedCount = document.querySelectorAll('.brandCheckbox:checked').length;
+  document.getElementById('selectedCountText').innerText = ' (' + selectedCount + ')';
+}
+
+// Add event listener to each brand checkbox
+var checkboxes = document.querySelectorAll('.brandCheckbox');
+checkboxes.forEach(function(checkbox) {
+  checkbox.addEventListener('change', updateSelectedCount);
+});
+
+// Update selected count on page load
+updateSelectedCount();
