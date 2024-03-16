@@ -83,18 +83,7 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
 
 
 
-  
-  // SideBar
-  
-  document.querySelectorAll("#Delete").forEach((button) => {
-    button.addEventListener("click", function () {
-      // Find the closest table row (parentElement) and remove it
-      const row = this.closest("tr");
-      if (row) {
-        row.remove();
-      }
-    });
-  });
+
   
 
 // Function to update the count of selected brands
@@ -102,6 +91,11 @@ function updateSelectedCount() {
   var selectedCount = document.querySelectorAll('.brandCheckbox:checked').length;
   document.getElementById('selectedCountText').innerText = ' (' + selectedCount + ')';
 }
+
+// Add event listener to the checkbox beside the text "Brand"
+document.getElementById('selectAllBrands').addEventListener('change', function() {
+  updateSelectedCount();
+});
 
 // Add event listener to each brand checkbox
 var checkboxes = document.querySelectorAll('.brandCheckbox');
