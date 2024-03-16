@@ -576,6 +576,7 @@ th i {
 
 .brand {
   display: flex;
+  width: auto;
 }
 
 .brand-logo,
@@ -599,6 +600,7 @@ th i {
   font-size: 14px;
   font-weight: 500;
 }
+
 .table-category {
   display: flex;
   background-color: #f1ebf4;
