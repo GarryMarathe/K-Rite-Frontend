@@ -84,7 +84,7 @@ i {
 }
 
 .sidepanel {
-  width: 20%;
+  width: 25%;
   padding-left: 0px;
   margin: 8px;
   border: var(--primerly) solid 3px;
@@ -464,9 +464,39 @@ th {
   padding: 10px;
 }
 
-.fa-square-check {
-  font-size: 13px;
-  /* color: #777; */
+#selectAllBrands{
+  transform: scale(1.2);
+  margin-left: 5%;
+}
+
+.brandCheckbox::before {
+  font-size: 20px;
+    /* font-family: "Font Awesome 5 Free"; */
+  color: #777;
+}
+.brandCheckbox {
+  width: 25px; /* Adjust width */
+  height: 25px; /* Adjust height */
+  margin-top: 10%;
+
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  
+}
+
+.brand-Name{
+  font-size: 14px;
+  font-family: "Inter";
 }
 
 .table-Desc {

@@ -42,9 +42,29 @@ let dropDown = function (i) {
   pressedBtn4.addEventListener("click", function () {
     dropDown(listElements4);
   });
-  
-  // Search Box
-  
+
+// Function to toggle checkbox state
+let toggleCheckbox = function(checkbox) {
+  checkbox.checked = !checkbox.checked;
+};
+
+// Add event listener to each checkbox
+document.querySelectorAll('.checkbox').forEach(function(checkbox) {
+  checkbox.addEventListener("click", function() {
+    toggleCheckbox(this);
+  });
+});
+
+// Select all brands functionality
+document.getElementById('selectAllBrands').addEventListener('click', function() {
+  var checkboxes = document.querySelectorAll('.brandCheckbox');
+  checkboxes.forEach(function(checkbox) {
+    checkbox.checked = this.checked;
+  }, this); // Pass 'this' as the second argument to ensure it refers to the checkbox element
+});
+
+
+
   document
     .getElementById("searchForm")
     .addEventListener("submit", function (event) {
@@ -79,3 +99,4 @@ let dropDown = function (i) {
     });
   });
   
+
