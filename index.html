@@ -52,7 +52,7 @@
 
           <!-- dropDown -->
 
-          <button id="dropDown"><i class="fas fa-folder" ></i> Products <i class="fa fa-caret-down"></i></button>
+          <button id="dropDown"><i class="fas fa-folder"></i> Products <i class="fa fa-caret-down"></i></button>
 
           <ul id="dropElements" style="display: block;">
             <li><a href="#">Roadmap</a></li>
@@ -68,7 +68,7 @@
 
           <!-- 1 dropDown -->
 
-          <button id="dropDown1"><i class="fas fa-folder" ></i>Sales <i class="fas fa-caret-down"></i></button>
+          <button id="dropDown1"><i class="fas fa-folder"></i>Sales <i class="fas fa-caret-down"></i></button>
 
           <ul id="dropElements1" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -85,7 +85,7 @@
 
           <!-- 2 dropDown -->
 
-          <button id="dropDown2"><i class="fas fa-folder" ></i>Design <i class="fa fa-caret-down"></i></button>
+          <button id="dropDown2"><i class="fas fa-folder"></i>Design <i class="fa fa-caret-down"></i></button>
 
           <ul id="dropElements2" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -101,7 +101,7 @@
 
           <!-- 3 dropDown -->
 
-          <button id="dropDown3"><i class="fas fa-folder" ></i>Office <i class="fa fa-caret-down"></i></button>
+          <button id="dropDown3"><i class="fas fa-folder"></i>Office <i class="fa fa-caret-down"></i></button>
 
           <ul id="dropElements3" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -117,7 +117,7 @@
 
           <!-- 4 dropDown -->
 
-          <button id="dropDown4"><i class="fas fa-folder" ></i>Legal <i class="fa fa-caret-down"></i></button>
+          <button id="dropDown4"><i class="fas fa-folder"></i>Legal <i class="fa fa-caret-down"></i></button>
 
           <ul id="dropElements4" style="display: none;">
             <li><a href="#">Roadmap</a></li>
@@ -145,36 +145,308 @@
             </button>
             <li>
               <div class="trial">
-                <p><i class="fa-solid fa-triangle-exclamation"></i>  days left on trial</p>
-                
+                <p><i class="fa-solid fa-triangle-exclamation"></i> days left on trial</p>
+
                 <span class="trialBill">
                   <button><a href="#">Add Billing</a></button>
                 </span>
-              
-            </div>
+
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="maincontent">
-        <header>
-          <div class="title">
-            <h3>Products</h3>
-            <div class="searchBox">
-              <form id="searchForm" class="Search-tab">
-                <i class="fa fa-search"></i>
-                <input type="search" id="searchInput" required class="search" placeholder="Search for...">
-              </form>
-              <div class="sideIcon">
-                <i class="fa-regular fa-comments chat"></i>
-                <i class="fa-solid fa-gear setting"></i>
+    <table class="main-table">
+      <tr>
+        <td>
+          <div class="maincontent">
+            <header>
+              <div class="title">
+                <h3>Products</h3>
+                <div class="searchBox">
+                  <form id="searchForm" class="Search-tab">
+                    <i class="fa fa-search searchIcon"></i>
+                    <input type="search" id="searchInput" required class="search" placeholder="Search for...">
+                  </form>
+                  <div class="sideIcon">
+                    <i class="fa-regular fa-comments chat"></i>
+                    <i class="fa-solid fa-gear setting"></i>
+                  </div>
+                </div>
               </div>
+            </header>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="main-container">
+            <div class="category-Item"></div>
+            <div class="left-category">
+              <span><button><i class="fa-brands fa-staylinked"></i> All brands <i
+                    class="fa-solid fa-caret-down"></i></button></span>
+              <span><button>Desk <i class="fa-solid fa-caret-down"></i></button></span>
+              <span><button>Tags <i class="fa-solid fa-caret-down"></i></button></span>
+              <span><button id="sortButton"><i class="fa-solid fa-arrow-down-wide-short"></i> Short</button></span>
+              <span><button><i class="fa-solid fa-filter"></i> Filter</button></span>
             </div>
-        </header> 
+            <div class="right-category">
+              <span><button><i class="fa-solid fa-headset"></i> Meeting</button></span>
+              <span><button><i class="fa-solid fa-cloud-arrow-up"></i> Import/Export</button></span>
+            </div>
 
-    <script src="./scripts.js"></script>
+            <div class="tableData">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Brand</th>
+                    <th class="disc-head">Description</th>
+                    <th class="Member">Member</th>
+                    <th>Category</th>
+                    <th class="Head-tag">Tags</th>
+                    <th>Next Meeting</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/wix.png" alt="wix" class="brand-logo">
+                      <p class="brand-Name"> Wix</p>
+                    </td>
+                    <td class="table-Desc">Website builder platform..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                      <img class="user4 userImg" src="images/user4.webp" alt="User4">
+
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="Automation">Automation</p>
+                    </td>
+                    <td id="tag-head" class="Head-tag">
+                      <p class="tag">#DigitelTranformation</p>
+                      <p class="tag">#Critivity</p>
+                    </td>
+                    <td>
+                      <p class="time" id="today">in 30 minutes</p>
+                    </td>
+                  </tr>
+
+
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/shopify.webp" alt="wix" class="brand-logo">
+                      <p class="brand-Name"> Shopify</p>
+                    </td>
+                    <td class="table-Desc">E-commerce platform..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="E-commerse">E-commerse</p>
+                      <p class="table-category" id="Publising">Publising</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#DigitelTranformation</p>
+                      <p class="tag">#Critivity</p>
+                    </td>
+                    <td>
+                      <p class="time" id="tommorow">Tommorow</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/mailChirmp.webp" alt="wix" class="brand-logo">
+                      <p class="brand-Name"> Mailchimp</p>
+                    </td>
+                    <td class="table-Desc">Email marketing and automation platform..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                      <img class="user4 userImg" src="images/user4.webp" alt="User4">
+                      <img class="user5 userImg" src="images/user5.webp" alt="User5">
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="Automation">Automation</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#omnisend</p>
+                      <p class="tag">#DripMarketing</p>
+                    </td>
+                    <td>
+                      <p class="time" id="tommorow">Tommorow</p>
+                    </td>
+                  </tr>
+
+
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/PayPal_logo.png" alt="wix" class="brand-logo">
+                      <p class="brand-Name"> PayPal</p>
+                    </td>
+                    <td class="table-Desc">Online payment processor..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                      <img class="user4 userImg" src="images/user4.webp" alt="User4">
+                      <img class="user5 userImg" src="images/user5.webp" alt="User5">
+                      <img class="user6 userImg" src="images/user6.webp" alt="User6">
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="Marketplace">Marketplace</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#BuySellOnline</p>
+                      <p class="tag">#Payment</p>
+                    </td>
+                    <td>
+                      <p class="time" id="today">in 6 Hours</p>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/k_rite.webp" alt="K-RITE" class="brand-logo">
+                      <p class="brand-Name"> K-RITE</p>
+                    </td>
+                    <td class="table-Desc">Expert marketing allies, dedicated to..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                      <img class="user4 userImg" src="images/user4.webp" alt="User4">
+                      <img class="user5 userImg" src="images/user5.webp" alt="User5">
+                      <img class="user6 userImg" src="images/user6.webp" alt="User6">
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="Publising">Publising</p>
+                      <p class="table-category" id="b2c">B2C</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#RentelIT</p>
+                      <p class="tag">#B2CMarket</p>
+                    </td>
+                    <td>
+                      <p class="time" id="Next-Month">Next Month</p>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/Disney.webp" alt="Disney" class="brand-logo">
+                      <p class="brand-Name"> Disney</p>
+                    </td>
+                    <td class="table-Desc">Entertainment conglomerate..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="b2b">B2B</p>
+                      <p class="table-category" id="b2c">B2C</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#BuySellOnline</p>
+                      <p class="tag">#Payment</p>
+                    </td>
+                    <td>
+                      <p class="time">in 6 Hours</p>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/google_PNG3.webp" alt="google" class="brand-logo">
+                      <p class="brand-Name"> Google</p>
+                    </td>
+                    <td class="table-Desc">Multinational technology company...</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                      <img class="user4 userImg" src="images/user4.webp" alt="User4">
+                      <img class="user5 userImg" src="images/user5.webp" alt="User5">
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="Finence">Finence</p>
+                      <p class="table-category" id="Automation">Automation</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#SerchFinence</p>
+                      <p class="tag">#Workspace</p>
+                    </td>
+                    <td>
+                      <p class="time" id="today">in 30 minutes</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td class="brand">
+                      <img src="images/Microsoft_icon.svg.webp" alt="Microsoft" class="brand-logo">
+                      <p class="brand-Name"> Microsoft</p>
+                    </td>
+                    <td class="table-Desc">Technology company specializing..</td>
+                    <td class="user-Img-Container Member">
+                      <img class="user1 userImg" src="images/user1.webp" alt="User1">
+                      <img class="user2 userImg" src="images/user2.webp" alt="User2">
+                      <img class="user3 userImg" src="images/user3.webp" alt="User3">
+                      <img class="user4 userImg" src="images/user4.webp" alt="User4">
+                      <img class="user5 userImg" src="images/user5.webp" alt="User5">
+                      <img class="user6 userImg" src="images/user6.webp" alt="User6">
+                    </td>
+                    <td class="table-category-head">
+                      <p class="table-category" id="Publising">Publising</p>
+                      <p class="table-category" id="b2c">B2C</p>
+                    </td>
+                    <td id="tag-head">
+                      <p class="tag">#RentelIT</p>
+                      <p class="tag">#B2CMarket</p>
+                    </td>
+                    <td>
+                      <p class="time" id="canceled">No Contect</p>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="botoom-btn">
+              <button><i class="fa-regular fa-square-check"></i> Select</button>
+              <button><i class="fa-solid fa-box-archive"></i> Archive</button>
+              <button id="Delete"><i class="fa-solid fa-trash"></i> Delete</button>
+              <button>More <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="./scripts.js"></script>
 </body>
 
 </html>
