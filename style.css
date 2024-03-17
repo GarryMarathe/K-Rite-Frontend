@@ -496,17 +496,6 @@ th i {
   justify-content: space-between;
 }
 
-.brand-logo {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  
-}
-
-.brand-Name{
-  font-size: 14px;
-  font-family: "Inter";
-}
 
 .disc-head,.Member,.category,.Head-tag,.meeting{
   font-size: 14px;
@@ -522,6 +511,8 @@ th i {
 
 .user-Img-Container {
   width: 17%;
+  position: relative;
+  overflow: hidden;
 }
 
 .main-container .userImg {
@@ -533,10 +524,6 @@ th i {
   margin-left: 6px;
 }
 
-.user-Img-Container {
-  position: relative;
-  overflow: hidden;
-}
 
 .user1 {
   left: 0px;
@@ -575,11 +562,6 @@ th i {
   border-radius: 3px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-}
-
 .brand-logo,
 .brand-Name {
   width: 100%;
@@ -589,11 +571,14 @@ th i {
 
 .brand-logo {
   margin-top: 26px;
+  margin-left: 10px;
 }
 
 .brand-Name {
   margin-left: 6px;
   margin-top: 30px;
+  font-size: 14px;
+  font-family: "Inter";
 }
 
 .table-Desc {
