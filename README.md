@@ -1,3 +1,3 @@
 # K-Rite-Frontend
 Frontend is deployed on Vercel
-https://k-rite-frontend.vercel.app
+[ Deployment Link](https://k-rite-frontend.vercel.app)
